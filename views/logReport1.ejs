@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logReport1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media only screen and (max-width: 420px) {
+            body {
+                overflow: hidden;
+                margin-top: 40px;
+            }
+
+            .progress {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .bar {
+                width: 180px;
+                height: 15px;
+                background-color: rgb(189, 185, 185);
+                border-radius: 15px;
+            }
+
+            .one {
+                background-color: #456789;
+            }
+
+            .main-heading {
+                margin-left: 20px;
+                text-align: left;
+            }
+
+            .main-heading h1 {
+                font-size: 36px;
+                font-weight: 500;
+
+            }
+
+            .main-heading p {
+                font-size: 18px;
+                letter-spacing: 1px;
+
+
+            }
+
+            em {
+                color: rgb(126, 124, 124);
+                font-size: 14px;
+            }
+
+            .pain-Areas {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 15%;
+                margin-bottom: 5%;
+            }
+
+            .continue {
+                width: 80%;
+                padding: 12px 26px;
+                font-size: 16px;
+                background-color: #456789;
+                border-radius: 25px;
+                border: none;
+                margin-left: 10%;
+
+            }
+
+            .continue a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .nav-bars {
+                margin-top: 45px;
+                border-top: 1px solid #456789;
+            }
+
+
+            .nav-bars ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style-type: none;
+                margin-left: -20px;
+
+            }
+
+            .selected {
+
+                fill: #EB6D54;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress">
+        <div class="bar one"></div>
+        <div class="bar two"></div>
+    </div>
+    <header class="main-heading">
+        <h1>Where are you experiencing pain?</h1>
+        <p>To provide you with valuable recommendations, tap the area you are experiencing pain in.</p>
+        <em>*You can select multiple areas</em>
+
+
+    </header>
+    <main>
+        <div class="pain-Areas">
+            <div class="neck svg-container" id="svgContainer1">
+                <svg width="80" height="53" viewBox="0 0 80 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="svgPath"
+                        d="M80 29.1819C80 49.7169 62.0914 52.5 40 52.5C17.9086 52.5 0 49.7169 0 29.1819C0 8.64692 17.9086 0 40 0C62.0914 0 80 8.64692 80 29.1819Z"
+                        fill="#FCEDB8" />
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#456789" font-size="16"
+                        font-family="Arial">Neck</text>
+                </svg>
+            </div>
+            <div class="upperback svg-container" id="svgContainer2" role="button">
+                <svg width="252" height="85" viewBox="0 0 252 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="svgPath"
+                        d="M252 64.5C252 100.122 195.588 78.5 126 78.5C56.4121 78.5 0 100.122 0 64.5C0 28.8776 56.4121 0 126 0C195.588 0 252 28.8776 252 64.5Z"
+                        fill="#FCEDB8" />
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#456789" font-size="16"
+                        font-family="Arial" class="text-Message">Upper Back</text>
+                </svg>
+            </div>
+            <div class="mid-back svg-container" id="svgContainer3" role="button">
+                <svg width="200" height="85" viewBox="0 0 200 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="svgPath"
+                        d="M200 64.5C200 100.122 155.228 78.5 100 78.5C44.7715 78.5 0 100.122 0 64.5C0 28.8776 44.7715 0 100 0C155.228 0 200 28.8776 200 64.5Z"
+                        fill="#FCEDB8" />
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#456789" font-size="16"
+                        font-family="Arial">Mid Back</text>
+                </svg>
+            </div>
+            <div class="lower-back svg-container" id="svgContainer4"><svg width="154" height="85" viewBox="0 0 154 85"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="svgPath"
+                        d="M154 64.4993C154 100.121 119.526 78.4991 77 78.4991C34.4741 78.4991 0 100.121 0 64.4993C0 28.8773 34.4741 0 77 0C119.526 0 154 28.8773 154 64.4993Z"
+                        fill="#FCEDB8" />
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#456789" font-size="16"
+                        font-family="Arial">Lower Back</text>
+                </svg></div>
+
+
+
+        </div>
+    </main>
+
+    <button class="continue"><a href="/logReport2">Continue</a></button>
+
+
+
+
+
+
+    </div>
+
+
+    </div>
+
+    </div>
+    <footer class="nav-bars">
+        <ul>
+            <div style="text-align: center;">
+                <svg class="iconsMediumHome" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 21H6C4.89543 21 4 20.1046 4 19V11.8284C4 11.298 4.21071 10.7893 4.58579 10.4142L10.5858 4.41421C11.3668 3.63317 12.6332 3.63316 13.4142 4.41421L19.4142 10.4142C19.7893 10.7893 20 11.298 20 11.8284V19C20 20.1046 19.1046 21 18 21H14M10 21V15C10 14.4477 10.4477 14 11 14H13C13.5523 14 14 14.4477 14 15V21M10 21H14"
+                        stroke="#456789" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <li>Home</li>
+
+            </div>
+            <div style="text-align: center;">
+                <svg class="iconsMediumStats" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 15L6 11L9 19L15 5L18 15L22 11" stroke="#A5A5A5" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <li>Reports</li>
+            </div>
+            <div style="text-align: center;">
+                <svg class="iconsMediumStar" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.072 4.31085C11.4079 3.47438 12.5921 3.47438 12.928 4.31085L14.3523 7.85774C14.4953 8.21394 14.8297 8.45683 15.2126 8.4828L19.0261 8.74137C19.9254 8.80235 20.2913 9.92853 19.5996 10.5065L16.6664 12.9571C16.3719 13.2033 16.2442 13.5963 16.3378 13.9685L17.2703 17.6752C17.4902 18.5494 16.5322 19.2454 15.7688 18.7661L12.5317 16.7338C12.2066 16.5297 11.7934 16.5297 11.4683 16.7338L8.23117 18.7661C7.46776 19.2454 6.50977 18.5494 6.72969 17.6752L7.66218 13.9685C7.75583 13.5963 7.62814 13.2033 7.33357 12.9571L4.40042 10.5065C3.70869 9.92853 4.07461 8.80235 4.97394 8.74137L8.78737 8.4828C9.17035 8.45683 9.50466 8.21394 9.6477 7.85774L11.072 4.31085Z"
+                        stroke="#A5A5A5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <li>Goals</li>
+            </div>
+            <div style="text-align: center;">
+                <svg class="iconsMediumSettings" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_17_1425)">
+                        <path
+                            d="M10.6918 4.07219C11.3878 2.50481 13.6122 2.50481 14.3082 4.07219V4.07219C14.7359 5.03544 15.8437 5.49429 16.8272 5.11561V5.11561C18.4277 4.49943 20.0006 6.07235 19.3844 7.67277V7.67277C19.0057 8.65634 19.4646 9.7641 20.4278 10.1918V10.1918C21.9952 10.8878 21.9952 13.1122 20.4278 13.8082V13.8082C19.4646 14.2359 19.0057 15.3437 19.3844 16.3272V16.3272C20.0006 17.9277 18.4277 19.5006 16.8272 18.8844V18.8844C15.8437 18.5057 14.7359 18.9646 14.3082 19.9278V19.9278C13.6122 21.4952 11.3878 21.4952 10.6918 19.9278V19.9278C10.2641 18.9646 9.15634 18.5057 8.17277 18.8844V18.8844C6.57235 19.5006 4.99943 17.9277 5.61561 16.3272V16.3272C5.99429 15.3437 5.53544 14.2359 4.57219 13.8082V13.8082C3.00481 13.1122 3.00481 10.8878 4.57219 10.1918V10.1918C5.53544 9.76409 5.99429 8.65634 5.61561 7.67277V7.67277C4.99943 6.07235 6.57235 4.49943 8.17277 5.11561V5.11561C9.15634 5.49429 10.2641 5.03544 10.6918 4.07219V4.07219Z"
+                            stroke="#A5A5A5" stroke-width="1.5" />
+                        <circle cx="12.5" cy="12" r="3" stroke="#A5A5A5" stroke-width="1.5" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_17_1425">
+                            <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <li>Settings</li>
+            </div>
+
+        </ul>
+    </footer>
+    <script>
+        // Get all elements with class 'svg-container'
+        const svgContainers = document.querySelectorAll('.svg-container');
+
+        // Add click event listener to each div
+        svgContainers.forEach(function (container) {
+            const svgPath = container.querySelector('.svgPath');
+
+            container.addEventListener('click', function () {
+                // Change SVG fill color to red for the clicked div
+                svgPath.classList.toggle('selected');
+
+
+            });
+        });
+    </script>
+</body>
+
+</html>

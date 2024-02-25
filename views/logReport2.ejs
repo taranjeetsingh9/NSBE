@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User pain info 2 </title>
+    <style>
+        @media only screen and (max-width: 420px) {
+
+            body {
+                margin-top: 10%;
+                padding: 5%;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+
+            }
+
+            .nav-bars {
+                margin-top: 33%;
+                border-top: 1px solid #456789;
+            }
+
+
+            .nav-bars ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style-type: none;
+                margin-left: -20px;
+
+            }
+
+
+
+            .progress {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .bar {
+                width: 160px;
+                height: 15px;
+                background-color: rgb(189, 185, 185);
+                border-radius: 15px;
+            }
+
+            .two {
+                background-color: #456789;
+            }
+
+            aside {
+                margin-top: 5%;
+            }
+
+
+            form {
+                background-color: #fff;
+                padding: 24px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 300px;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 12px;
+
+
+            }
+
+            input[type="radio"],
+            input[type="submit"] {
+                margin-bottom: 20px;
+            }
+
+            input[type="radio"] {
+                margin-right: 5px;
+            }
+
+            input[type="submit"] {
+                background-color: #4caf50;
+                color: #fff;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress">
+        <div class="bar one"></div>
+        <div class="bar two"></div>
+    </div>
+    <aside>
+        <a href="/logReport"><svg class="fluentMdl2back" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_24_1546)">
+                    <path
+                        d="M24 12.75H2.92969L12.1523 21.9727L11.0977 23.0273L0.0703125 12L11.0977 0.972656L12.1523 2.02734L2.92969 11.25H24V12.75Z"
+                        fill="black" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_24_1546">
+                        <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg></a>
+    </aside>
+    <main class="main">
+        <div class="heading">
+            <h1>Let’s dive deeper</h1>
+
+            <form action="/results" method="post">
+                <label>Back pains are often related with sleep. Mostly, what is your usual sleeping position?</label>
+                <input type="radio" name="sleep_position" value="back"> Back
+                <input type="radio" name="sleep_position" value="stomach"> Stomach
+                <input type="radio" name="sleep_position" value="sides"> Sides
+
+                <br>
+
+                <label>On average, how much sleep do you get every night?</label>
+                <input type="number" name="sleep_hours" placeholder="Enter hours">
+
+                <br><br>
+
+                <label>How physically demanding is your job?</label>
+                <select name="job_demand">
+                    <option value="mild">Mild</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="intense">Intense</option>
+                </select>
+
+                <br><br>
+
+                <label>How often do you exercise typically in a week?</label>
+                <input type="radio" name="exercise_frequency" value="1-2"> 1-2 times
+                <input type="radio" name="exercise_frequency" value="3-5"> 3-5 times
+                <input type="radio" name="exercise_frequency" value="over_5"> Over 5 times
+
+                <br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+    </main>
+    <footer class="nav-bars">
+        <ul>
+            <div style="text-align: center;">
+                <svg class="iconsMediumHome" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 21H6C4.89543 21 4 20.1046 4 19V11.8284C4 11.298 4.21071 10.7893 4.58579 10.4142L10.5858 4.41421C11.3668 3.63317 12.6332 3.63316 13.4142 4.41421L19.4142 10.4142C19.7893 10.7893 20 11.298 20 11.8284V19C20 20.1046 19.1046 21 18 21H14M10 21V15C10 14.4477 10.4477 14 11 14H13C13.5523 14 14 14.4477 14 15V21M10 21H14"
+                        stroke="#456789" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <li>Home</li>
+
+            </div>
+            <div style="text-align: center;">
+                <svg class="iconsMediumStats" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 15L6 11L9 19L15 5L18 15L22 11" stroke="#A5A5A5" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <li>Reports</li>
+            </div>
+            <div style="text-align: center;">
+                <svg class="iconsMediumStar" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.072 4.31085C11.4079 3.47438 12.5921 3.47438 12.928 4.31085L14.3523 7.85774C14.4953 8.21394 14.8297 8.45683 15.2126 8.4828L19.0261 8.74137C19.9254 8.80235 20.2913 9.92853 19.5996 10.5065L16.6664 12.9571C16.3719 13.2033 16.2442 13.5963 16.3378 13.9685L17.2703 17.6752C17.4902 18.5494 16.5322 19.2454 15.7688 18.7661L12.5317 16.7338C12.2066 16.5297 11.7934 16.5297 11.4683 16.7338L8.23117 18.7661C7.46776 19.2454 6.50977 18.5494 6.72969 17.6752L7.66218 13.9685C7.75583 13.5963 7.62814 13.2033 7.33357 12.9571L4.40042 10.5065C3.70869 9.92853 4.07461 8.80235 4.97394 8.74137L8.78737 8.4828C9.17035 8.45683 9.50466 8.21394 9.6477 7.85774L11.072 4.31085Z"
+                        stroke="#A5A5A5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <li>Goals</li>
+            </div>
+            <div style="text-align: center;">
+                <svg class="iconsMediumSettings" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_17_1425)">
+                        <path
+                            d="M10.6918 4.07219C11.3878 2.50481 13.6122 2.50481 14.3082 4.07219V4.07219C14.7359 5.03544 15.8437 5.49429 16.8272 5.11561V5.11561C18.4277 4.49943 20.0006 6.07235 19.3844 7.67277V7.67277C19.0057 8.65634 19.4646 9.7641 20.4278 10.1918V10.1918C21.9952 10.8878 21.9952 13.1122 20.4278 13.8082V13.8082C19.4646 14.2359 19.0057 15.3437 19.3844 16.3272V16.3272C20.0006 17.9277 18.4277 19.5006 16.8272 18.8844V18.8844C15.8437 18.5057 14.7359 18.9646 14.3082 19.9278V19.9278C13.6122 21.4952 11.3878 21.4952 10.6918 19.9278V19.9278C10.2641 18.9646 9.15634 18.5057 8.17277 18.8844V18.8844C6.57235 19.5006 4.99943 17.9277 5.61561 16.3272V16.3272C5.99429 15.3437 5.53544 14.2359 4.57219 13.8082V13.8082C3.00481 13.1122 3.00481 10.8878 4.57219 10.1918V10.1918C5.53544 9.76409 5.99429 8.65634 5.61561 7.67277V7.67277C4.99943 6.07235 6.57235 4.49943 8.17277 5.11561V5.11561C9.15634 5.49429 10.2641 5.03544 10.6918 4.07219V4.07219Z"
+                            stroke="#A5A5A5" stroke-width="1.5" />
+                        <circle cx="12.5" cy="12" r="3" stroke="#A5A5A5" stroke-width="1.5" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_17_1425">
+                            <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <li>Settings</li>
+            </div>
+
+        </ul>
+    </footer>
+
+</body>
+
+</html>
