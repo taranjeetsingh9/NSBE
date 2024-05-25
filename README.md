@@ -4,12 +4,8 @@
 ## Overview
 Thrive is a pain management application aimed at helping individuals better manage and alleviate their chronic pain. As a full-stack developer on the project, I provided guidance in UI/UX design and development. Despite the tight deadline of just 3 days, I eagerly embraced the challenge and made significant contributions to the project's success.
 
-## Key ContributionsI helped design the user interface to make it easy to use and understand.
-I built the entire application, working on both the parts you see (the frontend) and the parts you don't (the backend).
-I learned how to work on the backend (the part that handles the data and logic behind the scenes) and connected it to the frontend.
-I used tools like Express.js and EJS to make the website work smoothly and show information dynamically.
-Even though it was challenging to learn new things, I managed to make the backend work well with the frontend.
-Our hard work paid off! We won the MLH Best Diversity, Equity, and Inclusion (DEI) Hack award for making sure everyone feels welcome and included in our solution.
+## Key Contributions
+I played a key role in designing the user interface for our application, ensuring it was intuitive and easy to navigate. Additionally, I took charge of developing the entire application, handling both the frontend and backend aspects. Learning backend development was a challenge, but I successfully connected it to the frontend using tools like Express.js and EJS, allowing the website to function smoothly and display information dynamically. Despite the learning curve, I managed to seamlessly integrate the backend with the frontend. Our efforts were recognized when we won the MLH Best Diversity, Equity, and Inclusion (DEI) Hack award, reflecting our commitment to creating a welcoming and inclusive solution.
 
 ## Technologies Used
 - Frontend: HTML, CSS, JavaScript
