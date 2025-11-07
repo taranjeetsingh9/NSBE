@@ -5,7 +5,7 @@ const path = require("path");
 const { CohereClient } = require("cohere-ai");
 
 const cohere = new CohereClient({
-  token: "DDdU4XGvdACJlsTHVwsUk0nWt7U6HsjvAarGYWa2",
+  token: "",
 });
 
 // (async () => {
